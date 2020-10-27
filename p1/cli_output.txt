@@ -1,0 +1,46 @@
+C:\Users\lis57>ibmcloud login
+API 엔드포인트: https://cloud.ibm.com
+지역: kr-seo
+
+Email> 17681022@konyang.ac.kr
+
+Password>
+인증 중...
+확인
+
+대상 지정된 계정 Insu Lee's Account (70134a74a7d74141bf9c46c143751b31)
+
+
+API 엔드포인트:      https://cloud.ibm.com
+지역:                kr-seo
+사용자:              17681022@konyang.ac.kr
+계정:                Insu Lee's Account (70134a74a7d74141bf9c46c143751b31)
+리소스 그룹:         대상으로 지정된 리소스 그룹이 없습니다.'ibmcloud target -g RESOURCE_GROUP' 명령을 사용하십시오.
+CF API 엔드포인트:
+조직:
+영역:
+
+C:\Users\lis57>ibmcloud resource groups
+17681022@konyang.ac.kr(으)로 70134a74a7d74141bf9c46c143751b31 계정에서 모든 리소스 그룹 검색 중...
+확인
+이름        ID                                 기본 그룹   상태
+MyFirstRG   3bf7db7f9e9845a4a2e134efa82f4717   true        ACTIVE
+
+C:\Users\lis57>ibmcloud target -g MyFirstRG
+대상 지정된 리소스 그룹 MyFirstRG
+
+
+
+API 엔드포인트:      https://cloud.ibm.com
+지역:                kr-seo
+사용자:              17681022@konyang.ac.kr
+계정:                Insu Lee's Account (70134a74a7d74141bf9c46c143751b31)
+리소스 그룹:         MyFirstRG
+CF API 엔드포인트:
+조직:
+영역:
+
+C:\Users\lis57>ibmcloud target --cf
+실패
+Cloud Foundry 인스턴스를 가져올 수 없음:
+Cloud Foundry 공용 인스턴스나 Cloud Foundry 엔터프라이즈 환경을 찾지 못했습니다.

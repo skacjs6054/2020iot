@@ -1,0 +1,131 @@
+C:\Users\lis57>ibmcloud target
+
+
+API 엔드포인트:      https://cloud.ibm.com
+지역:                kr-seo
+사용자:              17681022@konyang.ac.kr
+계정:                Insu Lee's Account (70134a74a7d74141bf9c46c143751b31)
+리소스 그룹:         MyFirstRG
+CF API 엔드포인트:
+조직:
+영역:
+
+C:\Users\lis57>ibmcloud regions
+지역 나열 중...
+
+이름       표시 이름
+au-syd     Sydney
+in-che     Chennai
+jp-tok     Tokyo
+kr-seo     Seoul
+eu-de      Frankfurt
+eu-gb      London
+us-south   Dallas
+us-east    Washington DC
+
+C:\Users\lis57>ibmcloud target -r
+Incorrect Usage.
+
+이름:
+  target - 대상 지역, 계정, 리소스 그룹, 조직 또는 영역 설정 또는 보기
+
+사용법:
+  ibmcloud target [-r REGION_NAME | --unset-region] [-c ACCOUNT_ID] [-g (RESOURCE_GROUP_NAME | RESOURCE_GROUP_ID) | --unset-resource-group] [--cf] [--cf-api ENDPOINT] [-o ORG] [-s SPACE] [--output FORMAT] [-q, --quiet]
+
+옵션:
+  -c value                계정 ID
+  -r value                지역 이름, 예를 들어 'us-south' 또는 'eu-gb'
+  -g value                리소스 그룹의 이름 또는 ID
+  --cf                    대화식으로 대상 조직 및 영역 선택
+  --cf-api value          Cloud Foundry API 엔드포인트
+  -o value                대상으로 지정할 조직의 이름
+  -s value                대상으로 지정할 영역의 이름
+  --unset-resource-group  대상 리소스 그룹 설정 취소
+  --unset-region          대상 지역 설정 취소
+  --output value          출력 형식을 지정하십시오. 현재는 JSON만 지원됩니다.
+  -q, --quiet             상세 출력 억제
+
+
+C:\Users\lis57>ibmcloud target -r us-south
+us-south 영역으로 전환됨
+
+
+
+API 엔드포인트:      https://cloud.ibm.com
+지역:                us-south
+사용자:              17681022@konyang.ac.kr
+계정:                Insu Lee's Account (70134a74a7d74141bf9c46c143751b31)
+리소스 그룹:         MyFirstRG
+CF API 엔드포인트:
+조직:
+영역:
+
+C:\Users\lis57>ibmcloud target --cf-api https://api.us-south.cf.cloud.ibm.com
+대상 지정된 Cloud Foundry(https://api.us-south.cf.cloud.ibm.com)
+
+
+
+API 엔드포인트:      https://cloud.ibm.com
+지역:                us-south
+사용자:              17681022@konyang.ac.kr
+계정:                Insu Lee's Account (70134a74a7d74141bf9c46c143751b31)
+리소스 그룹:         MyFirstRG
+CF API 엔드포인트:   https://api.us-south.cf.cloud.ibm.com(API 버전: 2.153.0)
+조직:
+영역:
+
+C:\Users\lis57>ibmcloud -o 17681022@konyang.ac.kr -s test
+Incorrect Usage.
+
+이름:
+  ibmcloud - IBM Cloud과(와) 상호작용할 명령행 도구
+자세한 정보는 https://ibm.biz/cli-docs에서 찾으십시오.
+
+사용법:
+  [environment variables] ibmcloud [global options] command [arguments...] [command options]
+
+버전:
+  1.2.3+3577aee6-2020-09-25T14:34:09+00:00
+
+명령:
+  api          대상 API 엔드포인트 설정 또는 보기
+  login        사용자 로그인
+  target       대상 지역, 계정, 리소스 그룹, 조직 또는 영역 설정 또는 보기
+  config       구성에 기본값 쓰기
+  update       최신 버전으로 CLI 업데이트
+  logout       사용자 로그아웃
+  regions      모든 지역 나열
+  version      버전 인쇄
+  resource     리소스 그룹 및 리소스 관리
+  iam          ID 및 리소스에 대한 액세스 관리
+  dev          애플리케이션 작성, 개발, 배치 및 모니터
+  app          [더 이상 사용되지 않음] Cloud Foundry 애플리케이션 및 애플리케이션 관련 도메인과 라우트를 관리합니다.
+  service      [더 이상 사용되지 않음] Cloud Foundry 서비스를 관리합니다.
+  billing      사용량 및 청구 정보 검색
+  plugin       플러그인 및 플러그인 저장소 관리
+  cf           IBM Cloud CLI 컨텍스트로 Cloud Foundry CLI 실행
+  catalog      카탈로그 관리
+  account      계정, 사용자, 조직 및 영역 관리
+  enterprise   엔터프라이즈, 계정 그룹 및 그룹을 관리합니다.
+  cfee         [더 이상 사용되지 않음] Cloud Foundry Enterprise Environment 관리
+  sl           클래식 인프라 서비스 관리
+  help, h      도움말 표시
+
+명령에 대한 자세한 정보는 'ibmcloud help [command]'을(를) 입력하십시오.
+
+환경 변수:
+  IBMCLOUD_COLOR=false                     출력에 색상을 입히지 않음
+  IBMCLOUD_ANALYTICS=false                 분석을 위한 사용 통계를 수집하지 않음
+  IBMCLOUD_VERSION_CHECK=false             업데이트를 위한 최신 버전을 확인하지 않음
+  IBMCLOUD_HTTP_TIMEOUT=5                  HTTP 요청에 대한 제한시간
+  IBMCLOUD_API_KEY=api_key_value           로그인에 사용되는 API 키
+  IBMCLOUD_TRACE=true                      API 요청 진단을 stdout에 인쇄
+  IBMCLOUD_TRACE=path/to/trace.log         로그 파일에 API 요청 진단 추가
+  IBMCLOUD_HOME=path/to/dir                구성 디렉토리에 대한 경로
+
+글로벌 옵션:
+  --version, -v                      버전 인쇄
+  --help, -h                         도움말 표시
+
+
+C:\Users\lis57>

@@ -1,0 +1,17 @@
+1. curl -H "Authorization: Bearer $API_BEARER_TOKEN" -X PUT "$SERVICE_URL/products" 실행 결과
+
+{"couchdb":"Welcome","version":"2.1.1","vendor":{"name":"IBM Cloudant","version":"8162","variant":"paas"},"features":["geo","access-ready","iam","partitioned","pluggable-storage-engines","scheduler"],"features_flags":["partitioned"]}
+
+
+2. curl -H "Authorization: Bearer $API_BEARER_TOKEN" -X POST
+"$SERVICE_URL/products" -H "Content-Type: application/json" --data '{
+"_id": "small-appliances:1000042",
+"type": "product",
+"productid": "1000042",
+"brand": "Salter",
+"name": "Digital Kitchen Scales",
+"price: 14.99,
+}'
+실행 결과
+
+{"ok":true,"id":"small-appliances:1000042","rev":"1-20363c430efb63ca10b7346edbfaa4c7"}

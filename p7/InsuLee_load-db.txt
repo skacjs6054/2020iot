@@ -1,0 +1,28 @@
+lis57@LAPTOP-VF8DSP6C MINGW32 /d/workspaces/4grade2rd/ibm/p7-3/Unit-14
+$ npm run load-db
+
+> unit-14@1.0.0 load-db D:\workspaces\4grade2rd\ibm\p7-3\Unit-14
+> node ./utils/load-cloudant
+
+[2020-11-18T03:27:48.892] [INFO] default - 1605637668891:INFO: Connect success! Connected to DB: shopping_list
+[2020-11-18T03:27:48.897] [INFO] default - 1605637668897:INFO: mainline(): Initializing Cloudant... Done.
+[2020-11-18T03:27:48.899] [INFO] default - 1605637668899:INFO: mainline(): Script start at: 2020-11-18 3:27:48 ├F10: AM┤
+[2020-11-18T03:27:48.899] [INFO] default - 1605637668899:INFO: mainline(): Loading data for item...
+[2020-11-18T03:27:48.899] [INFO] default - 1605637668899:INFO: loadData(): Loading data files...
+[2020-11-18T03:27:48.901] [INFO] default - 1605637668901:INFO: loadData():readableStream.on(open): Opened file: ../data/Grocery_UPC_Database.csv
+[2020-11-18T03:27:48.921] [DEBUG] default - 1605637668921:DEBUG: Creating documents: 1-10000
+[2020-11-18T03:27:52.037] [DEBUG] default - 1605637672037:DEBUG: Creating documents: 10001-20000
+[2020-11-18T03:27:55.132] [DEBUG] default - 1605637675132:DEBUG: Creating documents: 20001-30000
+[2020-11-18T03:27:58.235] [DEBUG] default - 1605637678235:DEBUG: Creating documents: 30001-40000
+[2020-11-18T03:28:01.347] [DEBUG] default - 1605637681347:DEBUG: Creating documents: 40001-50000
+[2020-11-18T03:28:04.450] [DEBUG] default - 1605637684450:DEBUG: Creating documents: 50001-60000
+[2020-11-18T03:28:07.569] [DEBUG] default - 1605637687569:DEBUG: Creating documents: 60001-70000
+[2020-11-18T03:28:10.671] [DEBUG] default - 1605637690671:DEBUG: Creating documents: 70001-80000
+[2020-11-18T03:28:13.787] [DEBUG] default - 1605637693787:DEBUG: Creating documents: 80001-90000
+[2020-11-18T03:28:16.889] [DEBUG] default - 1605637696889:DEBUG: Creating documents: 90001-100000
+[2020-11-18T03:28:19.985] [DEBUG] default - 1605637699985:DEBUG: Creating documents: 100001-110000
+[2020-11-18T03:28:23.063] [INFO] default - 1605637703063:INFO: loadData():readableStream.on(close): Closed file: ../data/Grocery_UPC_Database.csv
+[2020-11-18T03:28:23.064] [DEBUG] default - 1605637703064:DEBUG: Creating documents: 110001-110436
+[2020-11-18T03:28:26.071] [INFO] default - 1605637706071:INFO: mainline(): Loading item data, done.
+[2020-11-18T03:28:26.071] [INFO] default - 1605637706071:INFO: Total item documents loaded: 110436
+[2020-11-18T03:28:26.071] [INFO] default - 1605637706071:INFO: mainline(): Script finished at: 2020-11-18 3:28:26 ├F10: AM┤

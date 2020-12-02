@@ -3,7 +3,7 @@ D:\workspaces\4grade2rd\ibm>curl -X GET -u "apikey:SVTkbnFfScMX_v4J6oSjvPMa748zk
                                  Dload  Upload   Total   Spent    Left  Speed
 100 37838  100 37838    0     0  37838      0  0:00:01  0:00:01 --:--:-- 24458
 
-D:\workspaces\4grade2rd\ibm>dir/w korean.wav
+D:\workspaces\4grade2rd\ibm>dir/a korean.wav
  D 드라이브의 볼륨: 새 볼륨
  볼륨 일련 번호: E67D-03C8
 
@@ -12,3 +12,8 @@ D:\workspaces\4grade2rd\ibm>dir/w korean.wav
 2020-12-02  오전 02:04            37,838 korean.wav
                1개 파일              37,838 바이트
                0개 디렉터리  310,371,303,424 바이트 남음
+
+
+----------------------------------------------------------------
+
+/w => /a
